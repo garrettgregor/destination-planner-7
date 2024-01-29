@@ -20,7 +20,7 @@ class Seed
         description: Faker::Lorem.sentence,
         image_url: Faker::Placeholdit.image
       )
-      puts "Destination #{i}: #{dest.name} created!"
+      Rails.logger.debug "Destination #{i}: #{dest.name} created!"
     end
   end
 end

@@ -1,24 +1,22 @@
 class DestinationsController < ApplicationController
-  before_action :set_destination, only: [:show, :edit, :update, :destroy]
+  before_action :set_destination, only: %i[show edit update destroy]
 
   def index
     @destinations = Destination.all
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @destination = Destination.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @destination = Destination.new(destination_params)
     if @destination.save
-      redirect_to @destination, notice: 'Destination was successfully created.'
+      redirect_to @destination, notice: "Destination was successfully created."
     else
       render :new
     end
@@ -26,7 +24,7 @@ class DestinationsController < ApplicationController
 
   def update
     if @destination.update(destination_params)
-      redirect_to @destination, notice: 'Destination was successfully updated.'
+      redirect_to @destination, notice: "Destination was successfully updated."
     else
       render :edit
     end
@@ -34,10 +32,11 @@ class DestinationsController < ApplicationController
 
   def destroy
     @destination.destroy
-    redirect_to destinations_path, notice: 'Destination was successfully destroyed.'
+    redirect_to destinations_path, notice: "Destination was successfully destroyed."
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_destination
     @destination = Destination.find(params[:id])
