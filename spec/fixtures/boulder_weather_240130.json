@@ -1,0 +1,44 @@
+{
+  "coord": {
+      "lon": -105.2143,
+      "lat": 40.0497
+  },
+  "weather": [
+      {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+      }
+  ],
+  "base": "stations",
+  "main": {
+      "temp": 39.34,
+      "feels_like": 34.99,
+      "temp_min": 33.21,
+      "temp_max": 45.25,
+      "pressure": 1027,
+      "humidity": 66
+  },
+  "visibility": 10000,
+  "wind": {
+      "speed": 5.99,
+      "deg": 255,
+      "gust": 10
+  },
+  "clouds": {
+      "all": 0
+  },
+  "dt": 1706592983,
+  "sys": {
+      "type": 2,
+      "id": 2011822,
+      "country": "US",
+      "sunrise": 1706537550,
+      "sunset": 1706573708
+  },
+  "timezone": -25200,
+  "id": 7261393,
+  "name": "Gunbarrel",
+  "cod": 200
+}
