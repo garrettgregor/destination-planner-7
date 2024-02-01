@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/zip?appid=OPEN_WEATHER_API_KEY&zip=80301
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 01 Feb 2024 04:53:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '84'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/zip?zip=80301"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"zip":"80301","name":"Boulder County","lat":40.0497,"lon":-105.2143,"country":"US"}'
+  recorded_at: Thu, 01 Feb 2024 04:53:56 GMT
+recorded_with: VCR 6.2.0
