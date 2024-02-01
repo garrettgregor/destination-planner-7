@@ -6,7 +6,7 @@ class Weather
               :summary
 
   def initialize(data)
-    @date = Time.at(data[:dt]).strftime("%A, %B %d, %Y")
+    @date = Time.at(data[:dt]).strftime("%A, %B %d, %Y") # rubocop:disable Rails/TimeZone
     # without .zone gives UTC time
     @current_temp = data[:main][:temp]
     @max_temp = data[:main][:temp_max]

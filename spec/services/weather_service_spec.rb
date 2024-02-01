@@ -34,7 +34,7 @@ RSpec.describe WeatherService do
       result = service.get_weather_for(latitude, longitude)
 
       expect(result).to be_a(Hash)
-      expect(result[:dt]).to eq(1706592983)
+      expect(result[:dt]).to eq(1706592983) # rubocop:disable Style/NumericLiterals
       expect(result[:main][:temp]).to eq(39.34)
       expect(result[:main][:temp_min]).to eq(33.21)
       expect(result[:main][:temp_max]).to eq(45.25)
