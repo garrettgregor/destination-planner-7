@@ -5,7 +5,9 @@ class DestinationsController < ApplicationController
     @destinations = Destination.all
   end
 
-  def show; end
+  def show
+    @destination_weather = WeatherFacade.new.current_weather_in(@destination.zip)
+  end
 
   def new
     @destination = Destination.new
