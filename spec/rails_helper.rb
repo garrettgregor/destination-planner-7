@@ -68,7 +68,9 @@ VCR.configure do |config|
   end
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
-  config.filter_sensitive_data("<API Key>") { ENV["name_api_key"] } # name_api_key from config/application.yml
+  # Hide more api_keys by copying down the following line:
+  # config.filter_sensitive_data("<API Key>") { ENV["name_api_key"] } # name_api_key from config/application.yml
+  config.filter_sensitive_data("OPEN_WEATHER_API_KEY") { ENV["OPEN_WEATHER_API_KEY"] }
   config.configure_rspec_metadata!
   config.default_cassette_options = { re_record_interval: 30.days }
   config.allow_http_connections_when_no_cassette = true
