@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.giphy.com/v1/gifs/search?api_key=YTLNDpqeDYlF6CXNBmYQ65AuybglZlZt&bundle=messaging_non_clips&lang=en&limit=1&offset=0&q=clear%20sky&rating=g
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5989'
+      Content-Type:
+      - application/json
+      X-Response-Time:
+      - 65ms
+      X-Cachiness-Shield-Rule:
+      - giphy_api_search_long_ttl
+      X-Cachiness-Shield-Desired-Ttl:
+      - 21600s
+      X-Cachiness-Shield-Actual-Ttl:
+      - '21600.000'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, Accept, x-requested-with, cache-control, X-GIPHY-SDK-NAME,
+        X-GIPHY-SDK-VERSION, X-GIPHY-SDK-PLATFORM, X-CSRFToken
+      X-Rule-Debug:
+      - '1'
+      X-Cachiness-Edge-Rule:
+      - giphy_api_search_long_ttl
+      X-Cachiness-Edge-Desired-Ttl:
+      - 21600s
+      X-Cachiness-Edge-Actual-Ttl:
+      - '21600.000'
+      X-Cachiness-Edge-Age:
+      - '0'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 03 Feb 2024 17:30:13 GMT
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=30
+      X-Served-By:
+      - cache-iad-kjyo7100077-IAD, cache-den8239-DEN
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1706981413.113307,VS0,VE146
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=15465600
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"type":"gif","id":"l1J9IQ6b9EtsW9QFG","url":"https://giphy.com/gifs/animation-art-l1J9IQ6b9EtsW9QFG","slug":"animation-art-l1J9IQ6b9EtsW9QFG","bitly_gif_url":"http://gph.is/2yiWytn","bitly_url":"http://gph.is/2yiWytn","embed_url":"https://giphy.com/embed/l1J9IQ6b9EtsW9QFG","username":"jonahprimiano","source":"https://vimeo.com/231324089","title":"music
+        video animation GIF by Jonah Primiano","rating":"g","content_url":"","source_tld":"vimeo.com","source_post_url":"https://vimeo.com/231324089","is_sticker":0,"import_datetime":"2017-10-14
+        17:30:03","trending_datetime":"0000-00-00 00:00:00","images":{"original":{"height":"270","width":"480","size":"987155","url":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/giphy.gif?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=giphy.gif&ct=g","mp4_size":"398401","mp4":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/giphy.mp4?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=giphy.mp4&ct=g","webp_size":"317926","webp":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/giphy.webp?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=giphy.webp&ct=g","frames":"30","hash":"a6c87a92a1f009b77954cb87b57e28b3"},"fixed_height":{"height":"200","width":"356","size":"413780","url":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200.gif?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200.gif&ct=g","mp4_size":"207614","mp4":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200.mp4?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200.mp4&ct=g","webp_size":"226212","webp":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200.webp?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200.webp&ct=g"},"fixed_height_downsampled":{"height":"200","width":"356","size":"84426","url":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200_d.gif?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200_d.gif&ct=g","webp_size":"47782","webp":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200_d.webp?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200_d.webp&ct=g"},"fixed_height_small":{"height":"100","width":"178","size":"128685","url":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/100.gif?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=100.gif&ct=g","mp4_size":"61455","mp4":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/100.mp4?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=100.mp4&ct=g","webp_size":"76450","webp":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/100.webp?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=100.webp&ct=g"},"fixed_width":{"height":"113","width":"200","size":"156499","url":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200w.gif?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200w.gif&ct=g","mp4_size":"71312","mp4":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200w.mp4?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200w.mp4&ct=g","webp_size":"92464","webp":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200w.webp?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200w.webp&ct=g"},"fixed_width_downsampled":{"height":"113","width":"200","size":"32250","url":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200w_d.gif?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200w_d.gif&ct=g","webp_size":"19510","webp":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/200w_d.webp?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=200w_d.webp&ct=g"},"fixed_width_small":{"height":"57","width":"100","size":"55024","url":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/100w.gif?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=100w.gif&ct=g","mp4_size":"23805","mp4":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/100w.mp4?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=100w.mp4&ct=g","webp_size":"32578","webp":"https://media0.giphy.com/media/l1J9IQ6b9EtsW9QFG/100w.webp?cid=d4cbab6d0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4&ep=v1_gifs_search&rid=100w.webp&ct=g"}},"user":{"avatar_url":"https://media2.giphy.com/avatars/jonahprimiano/dnBiJ7sUcSZD.jpg","banner_image":"https://media2.giphy.com/headers/jonahprimiano/OM91mzonsgsK.gif","banner_url":"https://media2.giphy.com/headers/jonahprimiano/OM91mzonsgsK.gif","profile_url":"https://giphy.com/jonahprimiano/","username":"jonahprimiano","display_name":"Jonah
+        Primiano","description":"Animation filmmaker based in Los Angeles.","instagram_url":"https://instagram.com/jonah_online","website_url":"http://www.jonahprimiano.com","is_verified":true},"analytics_response_payload":"e=Z2lmX2lkPWwxSjlJUTZiOUV0c1c5UUZHJmV2ZW50X3R5cGU9R0lGX1NFQVJDSCZjaWQ9ZDRjYmFiNmQwMTY1cDA1encyNmhiZWRpejd0Z3ZvcTk3emwxOGFoaXF0Y3RuNXA0JmN0PWc","analytics":{"onload":{"url":"https://giphy-analytics.giphy.com/v2/pingback_simple?analytics_response_payload=e%3DZ2lmX2lkPWwxSjlJUTZiOUV0c1c5UUZHJmV2ZW50X3R5cGU9R0lGX1NFQVJDSCZjaWQ9ZDRjYmFiNmQwMTY1cDA1encyNmhiZWRpejd0Z3ZvcTk3emwxOGFoaXF0Y3RuNXA0JmN0PWc&action_type=SEEN"},"onclick":{"url":"https://giphy-analytics.giphy.com/v2/pingback_simple?analytics_response_payload=e%3DZ2lmX2lkPWwxSjlJUTZiOUV0c1c5UUZHJmV2ZW50X3R5cGU9R0lGX1NFQVJDSCZjaWQ9ZDRjYmFiNmQwMTY1cDA1encyNmhiZWRpejd0Z3ZvcTk3emwxOGFoaXF0Y3RuNXA0JmN0PWc&action_type=CLICK"},"onsent":{"url":"https://giphy-analytics.giphy.com/v2/pingback_simple?analytics_response_payload=e%3DZ2lmX2lkPWwxSjlJUTZiOUV0c1c5UUZHJmV2ZW50X3R5cGU9R0lGX1NFQVJDSCZjaWQ9ZDRjYmFiNmQwMTY1cDA1encyNmhiZWRpejd0Z3ZvcTk3emwxOGFoaXF0Y3RuNXA0JmN0PWc&action_type=SENT"}}}],"meta":{"status":200,"msg":"OK","response_id":"0165p05zw26hbediz7tgvoq97zl18ahiqtctn5p4"},"pagination":{"total_count":10049,"count":1,"offset":0}}'
+  recorded_at: Sat, 03 Feb 2024 17:30:13 GMT
+recorded_with: VCR 6.2.0

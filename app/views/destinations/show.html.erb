@@ -17,9 +17,16 @@
 
   <%= image_tag(@destination.image_url) %>
 
-  <div class="row">
+  <div class="row" id="forecast-<%= @destination.name %>">
     <h4>Forecast for <%= @destination.name %>:</h4>
-
+    <h5>Date: <%= @destination_weather.date %></h5>
+    <ul>
+      <li>Current: <%= @destination_weather.current_temp %> Degrees </li>
+      <li>High: <%= @destination_weather.max_temp %> Degrees </li>
+      <li>Low: <%= @destination_weather.min_temp %> Degrees </li>
+      <li>Summary: <%= @destination_weather.summary %> </li>
+    </ul>
+    <%= image_tag(@current_weather_gif.url) %>
   </div>
 
   <div class="row">

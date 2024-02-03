@@ -62,6 +62,20 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 end
 
+VCR.configure do |config|
+  config.before_record do |i|
+    i.response.body.force_encoding("UTF-8")
+  end
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock
+  # Hide more api_keys by copying down the following line:
+  # config.filter_sensitive_data("<API Key>") { ENV["name_api_key"] } # name_api_key from config/application.yml
+  config.filter_sensitive_data("OPEN_WEATHER_API_KEY") { ENV["OPEN_WEATHER_API_KEY"] }
+  config.configure_rspec_metadata!
+  config.default_cassette_options = { re_record_interval: 30.days }
+  config.allow_http_connections_when_no_cassette = true
+end
+
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
