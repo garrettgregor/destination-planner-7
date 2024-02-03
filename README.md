@@ -2,6 +2,10 @@
 
 Simple app with CRUD interface for destinations.
 
+## Specs
+
+[Project Requirements](https://backend.turing.edu/module3/practice_assessments/practice_assessment)
+
 ### Versions
 
 Rails 7.0.8
