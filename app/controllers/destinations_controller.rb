@@ -7,6 +7,7 @@ class DestinationsController < ApplicationController
 
   def show
     @destination_weather = WeatherFacade.new.current_weather_in(@destination.zip)
+    @current_weather_gif = ImageFacade.new.image_of(@destination_weather.summary)
   end
 
   def new

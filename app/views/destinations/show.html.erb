@@ -26,6 +26,7 @@
       <li>Low: <%= @destination_weather.min_temp %> Degrees </li>
       <li>Summary: <%= @destination_weather.summary %> </li>
     </ul>
+    <%= image_tag(@current_weather_gif.url) %>
   </div>
 
   <div class="row">
