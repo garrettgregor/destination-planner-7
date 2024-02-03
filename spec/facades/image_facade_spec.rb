@@ -6,7 +6,7 @@ RSpec.describe ImageFacade do
 
     it "returns a new giphy image with url" do
       giphy_json = File.read("spec/fixtures/clear_sky_giphy.json")
-      giphy_url = "https://api.giphy.com/v1/gifs/search?api_key=#{ENV['GIPHY_API_KEY']}&q=clear sky&limit=1&offset=0&rating=g&lang=en&bundle=messaging_non_clips"
+      giphy_url = "https://api.giphy.com/v1/gifs/search?api_key=#{ENV['GIPHY_API_KEY']}&q=clear sky&limit=1&offset=0&rating=g&lang=en&bundle=messaging_non_clips" # rubocop:disable Layout/LineLength
 
       stub_request(:get, giphy_url)
         .to_return(status: 200, body: giphy_json, headers: {})
