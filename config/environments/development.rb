@@ -67,4 +67,7 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # In order to raise the Unpermitted Parameters error, the ActionController::Parameters.action_on_unpermitted_parameters field should be set to :raise. We need to make changes in a config file development.rb by adding the below line to the config/environments/development.rb:
+  config.action_controller.action_on_unpermitted_parameters = :raise
 end

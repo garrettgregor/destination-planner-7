@@ -82,6 +82,9 @@ Rails.application.configure do
   # require "syslog/logger"
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
 
+  # In order to raise the Unpermitted Parameters error, the ActionController::Parameters.action_on_unpermitted_parameters field should be set to :raise. We need to make changes in a config file development.rb by adding the below line to the config/environments/development.rb: # rubocop:disable Layout/LineLength
+  config.action_controller.action_on_unpermitted_parameters = :raise
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new($stdout)
     logger.formatter = config.log_formatter
