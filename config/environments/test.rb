@@ -58,6 +58,6 @@ Rails.application.configure do
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
 
-  # In order to raise the Unpermitted Parameters error, the ActionController::Parameters.action_on_unpermitted_parameters field should be set to :raise. We need to make changes in a config file development.rb by adding the below line to the config/environments/development.rb:
+  # In order to raise the Unpermitted Parameters error, the ActionController::Parameters.action_on_unpermitted_parameters field should be set to :raise. We need to make changes in a config file development.rb by adding the below line to the config/environments/development.rb: # rubocop:disable Layout/LineLength
   config.action_controller.action_on_unpermitted_parameters = :raise
 end
