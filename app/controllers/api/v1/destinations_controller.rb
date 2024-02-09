@@ -11,9 +11,11 @@ module Api
       end
 
       def show
-        # @destination_weather = WeatherFacade.new.current_weather_in(@destination.zip)
-        # @current_weather_gif = ImageFacade.new.image_of(@destination_weather.summary)
-        render json: DestinationSerializer.new(@destination), status: :ok
+        destination_weather = WeatherFacade.new.current_weather_in(@destination.zip)
+        current_weather_gif = ImageFacade.new.image_of(destination_weather.summary)
+
+        render json: DestinationSerializer.serialize_with_info(@destination, destination_weather, current_weather_gif),
+               status: :ok
       end
 
       def create
